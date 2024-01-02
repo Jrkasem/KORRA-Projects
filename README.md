@@ -5,7 +5,7 @@ This GitHub project is an advanced football (soccer) match data analysis tool th
 The visualization aspect of the project is where it truly stands out. Leveraging the mplsoccer library, the tool creates a series of intuitive and informative plots that bring the match data to life. These include pitch maps that illustrate shot locations and outcomes, differentiating between goals and missed shots with color-coded markers. It also visualizes passing networks, showcasing the direction and end locations of passes with clear, directed arrows. The project extends its capabilities to generate time-based event distributions, pie charts for shot outcomes, player influence metrics through bar charts, and heat maps depicting player movements and defensive actions. These visualizations are not only valuable for post-match analysis but also offer potential for real-time insights, making the tool an invaluable resource for coaches, analysts, and football enthusiasts who seek a deeper understanding of the game's nuances.
 
 
-# [Project 2: France VS Argntina Final World Cup 2022 Passes and Shots Maps](https://github.com/Jrkasem/AK_healtcare_data_portfolio/blob/main/pass%20and%20shots%20maps%20ARG%20VS%20FRA%202022%20Wrld%20cup.ipynb)
+# [Project 2: France VS Argntina Final World Cup 2022 Passes and Shots Maps](https://github.com/Jrkasem/AK_healtcare_data_portfolio/blob/main/pass%20and%20shots%20maps%20ARG%20VS%20FRA%202022%20Wrld%20cup%20adjusted.ipynb)
 
 The provided code is a Python script using the matplotlib, numpy, and mplsoccer libraries to visualize soccer match data, specifically focusing on shots and passes during a game. It consists of several blocks, each with a specific function:
 
