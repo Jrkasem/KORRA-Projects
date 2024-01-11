@@ -44,7 +44,7 @@ The script removes any extra, unused subplots.
 A central title is added, and the visualizations are displayed.
 Overall, this script demonstrates the use of data visualization techniques in Python to analyze and display soccer match data, particularly focusing on the actions (shots and passes) of players during a game.
 
-
+# [Project 3: Advanced Soccer Analytics: Unveiling the England Women's Team's Performance through Data Visualization and Player Analysis](https://github.com/Jrkasem/AK_healtcare_data_portfolio/blob/main/Soccer%20Game%20data%20analysis%20.ipynb)
 
 
 
