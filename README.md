@@ -51,8 +51,52 @@ The aggregation of danger pass data across all matches into a single DataFrame i
 
 The final part of the script focuses on individual player contributions. It simplifies player names to surnames and computes the number of danger passes per game for each player. This data is then presented in a bar chart, which effectively communicates the contribution of each player in creating dangerous situations on the field. This player-specific analysis not only accentuates individual performances but also aids in tactical planning and player development.
 
+# [Project 4: Player Position Clustering in Egypt vs. Congo DR Match](https://github.com/Jrkasem/KORRA-Projects/blob/main/Clustering%20players%20EGY%20VS%20Congo.ipynb)
+
+Why this project?
+This project is profoundly special to me because it brings back the emotional day when Egypt was heartbreakingly knocked out of the 2023 African Cup of Nations in the round of 16 on penalties. The primary goal of my project was to carefully prepare and clean the data for the match between Egypt and Congo DR in the round of 16 of the tournament.
 
 
+Introduction
+This report outlines the methodology and findings from a data analysis project that focused on clustering player positions during the Egypt vs. Congo DR round of 16 match at the 2023 African Cup. Leveraging the detailed event data available, we aimed to identify patterns and groupings in player behaviors and roles throughout the match.
+
+Data Preparation and Cleaning
+The data was sourced using the mplsoccer and Sbopen libraries, which provide a robust framework for accessing soccer match event data. Our initial step was to extract competition and match-specific information, focusing on the Egypt vs. Congo DR encounter.
+
+We utilized the following steps for data preparation:
+
+Data Extraction: Using Sbopen, we retrieved the match details, lineup, and events for the specific match (ID: 3922240), ensuring we had comprehensive data including player actions, positions, and more.
+
+Lineup Information: The lineup data (df_lineup) provided insights into player positions and allowed us to correlate event data with individual players effectively.
+
+Event Data Parsing: The core dataset (EGYvsCongo) was filtered to include only events where the minute was greater than 0, ensuring we analyzed actual gameplay data. We then reset the index for consistency and filled any missing values with zeros.
+
+Position Normalization: We standardized position names to simplify the analysis, consolidating various specific positions into broader categories (Defenders: 'DF', Midfielders: 'MF', Forwards: 'FW').
+
+Dimensionality Reduction and Visualization
+To analyze the players' positional data effectively, we applied dimensionality reduction:
+
+Standard Scaling: We scaled the numerical data to normalize the feature space, essential for effective dimensionality reduction.
+
+UMAP Application: We used the UMAP algorithm to reduce the feature space to two dimensions, enabling us to visualize the clustering of player positions.
+
+Visualization: A scatter plot was generated to visualize the reduced dimensions, with different colors representing distinct player roles (Goalkeepers, Defenders, Midfielders, Forwards).
+
+Clustering Analysis
+With the reduced dimensions, we applied hierarchical clustering to discern distinct clusters within the data:
+
+Agglomerative Clustering: We used this clustering method to identify four unique player clusters within the match, likely corresponding to different player roles and areas of activity on the pitch.
+
+Cluster Visualization: A second scatter plot illustrated the clusters, using different colors to differentiate between them.
+
+Results and Interpretation
+Our clustering revealed discernible groupings that corresponded well with standard football positions:
+
+Cluster 1 (Goalkeepers): A distinct cluster likely representing the goalkeepers, given their unique match actions and pitch locations.
+Clusters 2 and 3 (Defenders and Midfielders): These clusters probably represent defenders and midfielders, indicated by their overlapping but distinct areas on the UMAP plot.
+Cluster 4 (Forwards): The forwards' cluster was characterized by more advanced positions on the pitch and specific attacking actions.
+Conclusion
+The clustering analysis provided insightful categorizations of player roles based on their in-match actions and positions, aligning with standard football position categories. This methodology offers a data-driven way to understand player behaviors and can be applied to other matches for comparative analyses or scouting purposes. The visualizations and cluster interpretations form a solid basis for further tactical analysis and player evaluation in the context of the 2023 African Cup and beyond.
 
 
 
